@@ -1,0 +1,57 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/fonts/Grenadine/Grenadine-MVB-Bold-Italic.otf",
+      "sha1": "cf39260b9c48c2981856250114cdb1e2acdccee0"
+    },
+    {
+      "path": "src/fonts/Grenadine/Grenadine-MVB-Bold.otf",
+      "sha1": "87348ec505129515afcb30f9d755ceaca1c30027"
+    },
+    {
+      "path": "src/fonts/Grenadine/Grenadine-MVB-Medium-Italic.otf",
+      "sha1": "e12b8630b6e21dd69e761cbb12b830631a7b9d76"
+    },
+    {
+      "path": "src/fonts/Grenadine/Grenadine-MVB-Medium.otf",
+      "sha1": "6e3b232518a4a9146b7b5be6b020adf87dcfafb7"
+    },
+    {
+      "path": "src/fonts/Grenadine/Grenadine-MVB-Regular-Italic.otf",
+      "sha1": "ab21dbd389be7ef51d9f9bbc0b986622abc5bc39"
+    },
+    {
+      "path": "src/fonts/Grenadine/Grenadine-MVB-Regular.otf",
+      "sha1": "79592ef0a6368400c99b659da0608dbbce2bf8bf"
+    },
+    {
+      "path": "src/fonts/Objektiv/Objektiv-Mk2-Bold-Itlic.otf",
+      "sha1": "1bbdddae2efe9cb68e6c8f44a7d36ec15bf56a9c"
+    },
+    {
+      "path": "src/fonts/Objektiv/Objektiv-Mk2-Bold.otf",
+      "sha1": "dd0a0ede5227f21248d253d9f84056d77d350de3"
+    },
+    {
+      "path": "src/fonts/Objektiv/Objektiv-Mk2-Medium-Italic.otf",
+      "sha1": "cd2c189f88e8069c23441555b9686769ad863cd9"
+    },
+    {
+      "path": "src/fonts/Objektiv/Objektiv-Mk2-Medium.otf",
+      "sha1": "3caceacd80a720e568035464840e614231da197d"
+    },
+    {
+      "path": "src/fonts/Objektiv/Objektiv-Mk2-Regular-Italic.otf",
+      "sha1": "2f982df8b392eb801b84f89b204b9b0513b6b392"
+    },
+    {
+      "path": "src/fonts/Objektiv/Objektiv-Mk2-Regular.otf",
+      "sha1": "7ef516aaaaf4e82ee3e266238553ce6d08661777"
+    },
+    {
+      "path": "src/fonts/test/BAUHS93.TTF",
+      "sha1": "08a87e3bb7f054f6882cf9707a4b70a6f4e63395"
+    }
+  ]
+}
