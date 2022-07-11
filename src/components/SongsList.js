@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Dimensions } from 'react-native';
 import { Button, ImageBackground, Modal, Image, StyleSheet, TextInput, TouchableOpacity,TouchableWithoutFeedback, Text, View, ScrollView } from 'react-native';
 import Video, {TextTrackType} from "react-native-video";
@@ -47,7 +47,7 @@ export default function SongsList({navigation}) {
   const [searchText, setSearchText] = React.useState("")
   const [payModalVisible, setPayModalVisible] = React.useState(false);
   const [selectedVideo,  setSelectedVideo] = React.useState(null);
-  const [subtitle,  setSubtitle] = React.useState(null);
+  const [loadState, setLoadState] = useState(false)
   const songList = [
     {
       title: 'Jeremy',
@@ -190,7 +190,6 @@ export default function SongsList({navigation}) {
   }
   const onPressActiveSong = (item) => {
     setSelectedVideo(item.songVideo);
-    setSubtitle(item.subtitle);
   }
   const onPressBack = () => {
     navigation.navigate('Home');
@@ -307,19 +306,31 @@ export default function SongsList({navigation}) {
             </TouchableOpacity>
           </Modal>
       </ScrollView>
-      {selectedVideo && <View style={{right: 0, bottom:0,flex:1, position: "absolute", width: width, backgroundColor: "#000", height: height  }}>
-        <Video
-          source={selectedVideo}
-          style={{marginTop: 0, width: width, height: height-50 }}
-          controls={true}
-           onEnd={()=> { 
-            setSelectedVideo(null);
-            navigation.navigate('GameScreen');
-            }
-            }
-          onError={() => setSelectedVideo(null)} 
-        />
-      </View>}
+      {
+        selectedVideo && !isLoading && <View style={{right: 0, bottom:0,flex:1, position: "absolute", width: width, backgroundColor: "#000", height: height  }}>
+              <Video
+                source={selectedVideo}
+                style={{marginTop: 0, width: width, height: height-50 }}
+                controls={true}
+                useNativeControls
+                onEnd={()=> { 
+                setSelectedVideo(null);
+                navigation.navigate('GameScreen');
+                }
+                }
+                onLoadStart={() => {
+                    console.log('...I am loading...')
+                    setLoadState({ isLoading: true });
+                }}
+                onLoadedData={() => {
+                    console.log('Data is loaded!')
+                    setLoadState({ isLoading: false });
+
+                }}
+                onError={() => setSelectedVideo(null)} 
+              />
+        </View>
+      }
     </View>
   );
 }
@@ -340,11 +351,15 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "row",
     flexWrap: "wrap",
-    marginTop: 0,
+    marginTop: 20,
     marginLeft: -20,
+  },
+  feature: {
+
   },
   songIcon : {
     width: width / 1364 * 232,
+    height: height / 1024 * 350,
     marginLeft:  width / 1364 * 50,
     marginRight:  width / 1364 * 50,
   },

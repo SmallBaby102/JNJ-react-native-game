@@ -1,10 +1,7 @@
 import React, { useState, useEffect, useRef} from 'react';
 import { Dimensions } from 'react-native';
-import { ImageBackground, Image, StyleSheet, Button, 
+import { Animated, ImageBackground, Image, StyleSheet, Button, 
   TouchableOpacity, TouchableWithoutFeedback, Text, View, Easing } from 'react-native';
-import { Switch } from 'react-native-switch';
-import Modal from 'react-native-modal';
-import Animated, { useSharedValue, interpolate } from 'react-native-reanimated' // version 2.x
 
 const BackGroup = require("../assets/Group110.png");
 const Butterfly = require("../assets/09_item_Butterfly.png");
@@ -14,6 +11,7 @@ const Leaf = require("../assets/09_item_Leaf.png");
 const Tambourine = require("../assets/09_item_Tambourine.png");
 const Pick_Loop = require("../assets/Pick_Loop.png");
 const Pick_Exit = require("../assets/Pick_Exit.png");
+const Animation = require("../assets/animation.gif");
 
 const {width, height} = Dimensions.get('screen');
 const { Value, Extrapolate } = Animated;
@@ -174,6 +172,8 @@ export default function GameScreen({navigation}) {
                 > 
                     <Image source={Caterpillar} resizeMode="contain" style={styles.caterpillar}></Image>
                 </Animated.View>
+                {/* <Image source={Animation} resizeMode="contain" style={styles.animation}></Image> */}
+
             </TouchableOpacity>
             <TouchableOpacity
               onPress={onPressCocoon}
@@ -294,6 +294,9 @@ const styles = StyleSheet.create({
     flex: 1,
     textAlign: "center",
     alignContent: "center",
+  },
+  animation: {
+    position: "absolute",
   },
   imageBack: {
     width: "100%",
