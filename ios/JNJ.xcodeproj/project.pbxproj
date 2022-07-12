@@ -8,25 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* JNJTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* JNJTests.m */; };
+		04E619AFBA244B14BDC37D0A /* Objektiv-Mk2-Bold-Itlic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7D8334362C82436AAFEA6132 /* Objektiv-Mk2-Bold-Itlic.otf */; };
 		0C80B921A6F3F58F76C31292 /* libPods-JNJ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-JNJ.a */; };
+		12815DBF65F54AB89ACA1795 /* Objektiv-Mk2-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 668C1E89A6894107AF01F023 /* Objektiv-Mk2-Regular.otf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		24892B67C7C0482F9CFF1A02 /* Objektiv-Mk2-Medium-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E9712D12535B4E0BA9FF2DE1 /* Objektiv-Mk2-Medium-Italic.otf */; };
+		53251A0CA8C54B00A8E0C902 /* Grenadine-MVB-Bold-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 756E56AD774C42479757804C /* Grenadine-MVB-Bold-Italic.otf */; };
+		56280F7116A34FC0B469934B /* Grenadine-MVB-Regular-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 32669DE9F0B84FED920BC574 /* Grenadine-MVB-Regular-Italic.otf */; };
 		7699B88040F8A987B510C191 /* libPods-JNJ-JNJTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-JNJ-JNJTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		53251A0CA8C54B00A8E0C902 /* Grenadine-MVB-Bold-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 756E56AD774C42479757804C /* Grenadine-MVB-Bold-Italic.otf */; };
-		F4F765EA00B744979994D92A /* Grenadine-MVB-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 38EA2F3D7E09450095F9E030 /* Grenadine-MVB-Bold.otf */; };
 		8288D6DE66174F71B12092C0 /* Grenadine-MVB-Medium-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA50F5045E1849008F338ABB /* Grenadine-MVB-Medium-Italic.otf */; };
-		9EB9E1F3B6CC4C51A9B2F395 /* Grenadine-MVB-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 703D21F6388043279F31A4AB /* Grenadine-MVB-Medium.otf */; };
-		56280F7116A34FC0B469934B /* Grenadine-MVB-Regular-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 32669DE9F0B84FED920BC574 /* Grenadine-MVB-Regular-Italic.otf */; };
 		99F9F907FED44E9FB447A452 /* Grenadine-MVB-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 391971FCDDEB41F382D1579F /* Grenadine-MVB-Regular.otf */; };
-		04E619AFBA244B14BDC37D0A /* Objektiv-Mk2-Bold-Itlic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7D8334362C82436AAFEA6132 /* Objektiv-Mk2-Bold-Itlic.otf */; };
+		9EB9E1F3B6CC4C51A9B2F395 /* Grenadine-MVB-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 703D21F6388043279F31A4AB /* Grenadine-MVB-Medium.otf */; };
 		A3A9B9D953954773951E13CE /* Objektiv-Mk2-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EC9B2EE5BE88498BB349B2E9 /* Objektiv-Mk2-Bold.otf */; };
-		24892B67C7C0482F9CFF1A02 /* Objektiv-Mk2-Medium-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E9712D12535B4E0BA9FF2DE1 /* Objektiv-Mk2-Medium-Italic.otf */; };
-		D6CCD4C900694FA18EBC65F4 /* Objektiv-Mk2-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3F284F0BC5BD45BFAB8FD84C /* Objektiv-Mk2-Medium.otf */; };
 		BC3429F30A194123BE089A20 /* Objektiv-Mk2-Regular-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 05BD18CA78144987926D924E /* Objektiv-Mk2-Regular-Italic.otf */; };
-		12815DBF65F54AB89ACA1795 /* Objektiv-Mk2-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 668C1E89A6894107AF01F023 /* Objektiv-Mk2-Regular.otf */; };
+		D6CCD4C900694FA18EBC65F4 /* Objektiv-Mk2-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3F284F0BC5BD45BFAB8FD84C /* Objektiv-Mk2-Medium.otf */; };
 		DF2DA334808A47CDAE6D9EF9 /* BAUHS93.TTF in Resources */ = {isa = PBXBuildFile; fileRef = C61B5F095CBA45E39F6D3AAF /* BAUHS93.TTF */; };
+		F4F765EA00B744979994D92A /* Grenadine-MVB-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 38EA2F3D7E09450095F9E030 /* Grenadine-MVB-Bold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +43,7 @@
 		00E356EE1AD99517003FC87E /* JNJTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JNJTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* JNJTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JNJTests.m; sourceTree = "<group>"; };
+		05BD18CA78144987926D924E /* Objektiv-Mk2-Regular-Italic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Objektiv-Mk2-Regular-Italic.otf"; path = "../src/fonts/Objektiv/Objektiv-Mk2-Regular-Italic.otf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* JNJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JNJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = JNJ/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = JNJ/AppDelegate.mm; sourceTree = "<group>"; };
@@ -50,26 +51,25 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = JNJ/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = JNJ/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-JNJ-JNJTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JNJ-JNJTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32669DE9F0B84FED920BC574 /* Grenadine-MVB-Regular-Italic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Grenadine-MVB-Regular-Italic.otf"; path = "../src/fonts/Grenadine/Grenadine-MVB-Regular-Italic.otf"; sourceTree = "<group>"; };
+		38EA2F3D7E09450095F9E030 /* Grenadine-MVB-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Grenadine-MVB-Bold.otf"; path = "../src/fonts/Grenadine/Grenadine-MVB-Bold.otf"; sourceTree = "<group>"; };
+		391971FCDDEB41F382D1579F /* Grenadine-MVB-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Grenadine-MVB-Regular.otf"; path = "../src/fonts/Grenadine/Grenadine-MVB-Regular.otf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-JNJ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JNJ.debug.xcconfig"; path = "Target Support Files/Pods-JNJ/Pods-JNJ.debug.xcconfig"; sourceTree = "<group>"; };
+		3F284F0BC5BD45BFAB8FD84C /* Objektiv-Mk2-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Objektiv-Mk2-Medium.otf"; path = "../src/fonts/Objektiv/Objektiv-Mk2-Medium.otf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-JNJ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JNJ.release.xcconfig"; path = "Target Support Files/Pods-JNJ/Pods-JNJ.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-JNJ-JNJTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JNJ-JNJTests.debug.xcconfig"; path = "Target Support Files/Pods-JNJ-JNJTests/Pods-JNJ-JNJTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-JNJ.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JNJ.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		668C1E89A6894107AF01F023 /* Objektiv-Mk2-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Objektiv-Mk2-Regular.otf"; path = "../src/fonts/Objektiv/Objektiv-Mk2-Regular.otf"; sourceTree = "<group>"; };
+		703D21F6388043279F31A4AB /* Grenadine-MVB-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Grenadine-MVB-Medium.otf"; path = "../src/fonts/Grenadine/Grenadine-MVB-Medium.otf"; sourceTree = "<group>"; };
+		756E56AD774C42479757804C /* Grenadine-MVB-Bold-Italic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Grenadine-MVB-Bold-Italic.otf"; path = "../src/fonts/Grenadine/Grenadine-MVB-Bold-Italic.otf"; sourceTree = "<group>"; };
+		7D8334362C82436AAFEA6132 /* Objektiv-Mk2-Bold-Itlic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Objektiv-Mk2-Bold-Itlic.otf"; path = "../src/fonts/Objektiv/Objektiv-Mk2-Bold-Itlic.otf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = JNJ/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-JNJ-JNJTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JNJ-JNJTests.release.xcconfig"; path = "Target Support Files/Pods-JNJ-JNJTests/Pods-JNJ-JNJTests.release.xcconfig"; sourceTree = "<group>"; };
+		C61B5F095CBA45E39F6D3AAF /* BAUHS93.TTF */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = BAUHS93.TTF; path = ../src/fonts/test/BAUHS93.TTF; sourceTree = "<group>"; };
+		E9712D12535B4E0BA9FF2DE1 /* Objektiv-Mk2-Medium-Italic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Objektiv-Mk2-Medium-Italic.otf"; path = "../src/fonts/Objektiv/Objektiv-Mk2-Medium-Italic.otf"; sourceTree = "<group>"; };
+		EA50F5045E1849008F338ABB /* Grenadine-MVB-Medium-Italic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Grenadine-MVB-Medium-Italic.otf"; path = "../src/fonts/Grenadine/Grenadine-MVB-Medium-Italic.otf"; sourceTree = "<group>"; };
+		EC9B2EE5BE88498BB349B2E9 /* Objektiv-Mk2-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Objektiv-Mk2-Bold.otf"; path = "../src/fonts/Objektiv/Objektiv-Mk2-Bold.otf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		756E56AD774C42479757804C /* Grenadine-MVB-Bold-Italic.otf */ = {isa = PBXFileReference; name = "Grenadine-MVB-Bold-Italic.otf"; path = "../src/fonts/Grenadine/Grenadine-MVB-Bold-Italic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		38EA2F3D7E09450095F9E030 /* Grenadine-MVB-Bold.otf */ = {isa = PBXFileReference; name = "Grenadine-MVB-Bold.otf"; path = "../src/fonts/Grenadine/Grenadine-MVB-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		EA50F5045E1849008F338ABB /* Grenadine-MVB-Medium-Italic.otf */ = {isa = PBXFileReference; name = "Grenadine-MVB-Medium-Italic.otf"; path = "../src/fonts/Grenadine/Grenadine-MVB-Medium-Italic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		703D21F6388043279F31A4AB /* Grenadine-MVB-Medium.otf */ = {isa = PBXFileReference; name = "Grenadine-MVB-Medium.otf"; path = "../src/fonts/Grenadine/Grenadine-MVB-Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		32669DE9F0B84FED920BC574 /* Grenadine-MVB-Regular-Italic.otf */ = {isa = PBXFileReference; name = "Grenadine-MVB-Regular-Italic.otf"; path = "../src/fonts/Grenadine/Grenadine-MVB-Regular-Italic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		391971FCDDEB41F382D1579F /* Grenadine-MVB-Regular.otf */ = {isa = PBXFileReference; name = "Grenadine-MVB-Regular.otf"; path = "../src/fonts/Grenadine/Grenadine-MVB-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		7D8334362C82436AAFEA6132 /* Objektiv-Mk2-Bold-Itlic.otf */ = {isa = PBXFileReference; name = "Objektiv-Mk2-Bold-Itlic.otf"; path = "../src/fonts/Objektiv/Objektiv-Mk2-Bold-Itlic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		EC9B2EE5BE88498BB349B2E9 /* Objektiv-Mk2-Bold.otf */ = {isa = PBXFileReference; name = "Objektiv-Mk2-Bold.otf"; path = "../src/fonts/Objektiv/Objektiv-Mk2-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		E9712D12535B4E0BA9FF2DE1 /* Objektiv-Mk2-Medium-Italic.otf */ = {isa = PBXFileReference; name = "Objektiv-Mk2-Medium-Italic.otf"; path = "../src/fonts/Objektiv/Objektiv-Mk2-Medium-Italic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		3F284F0BC5BD45BFAB8FD84C /* Objektiv-Mk2-Medium.otf */ = {isa = PBXFileReference; name = "Objektiv-Mk2-Medium.otf"; path = "../src/fonts/Objektiv/Objektiv-Mk2-Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		05BD18CA78144987926D924E /* Objektiv-Mk2-Regular-Italic.otf */ = {isa = PBXFileReference; name = "Objektiv-Mk2-Regular-Italic.otf"; path = "../src/fonts/Objektiv/Objektiv-Mk2-Regular-Italic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		668C1E89A6894107AF01F023 /* Objektiv-Mk2-Regular.otf */ = {isa = PBXFileReference; name = "Objektiv-Mk2-Regular.otf"; path = "../src/fonts/Objektiv/Objektiv-Mk2-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		C61B5F095CBA45E39F6D3AAF /* BAUHS93.TTF */ = {isa = PBXFileReference; name = "BAUHS93.TTF"; path = "../src/fonts/test/BAUHS93.TTF"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +120,27 @@
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
 			name = JNJ;
+			sourceTree = "<group>";
+		};
+		21DA21ED892848D282C08F73 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				756E56AD774C42479757804C /* Grenadine-MVB-Bold-Italic.otf */,
+				38EA2F3D7E09450095F9E030 /* Grenadine-MVB-Bold.otf */,
+				EA50F5045E1849008F338ABB /* Grenadine-MVB-Medium-Italic.otf */,
+				703D21F6388043279F31A4AB /* Grenadine-MVB-Medium.otf */,
+				32669DE9F0B84FED920BC574 /* Grenadine-MVB-Regular-Italic.otf */,
+				391971FCDDEB41F382D1579F /* Grenadine-MVB-Regular.otf */,
+				7D8334362C82436AAFEA6132 /* Objektiv-Mk2-Bold-Itlic.otf */,
+				EC9B2EE5BE88498BB349B2E9 /* Objektiv-Mk2-Bold.otf */,
+				E9712D12535B4E0BA9FF2DE1 /* Objektiv-Mk2-Medium-Italic.otf */,
+				3F284F0BC5BD45BFAB8FD84C /* Objektiv-Mk2-Medium.otf */,
+				05BD18CA78144987926D924E /* Objektiv-Mk2-Regular-Italic.otf */,
+				668C1E89A6894107AF01F023 /* Objektiv-Mk2-Regular.otf */,
+				C61B5F095CBA45E39F6D3AAF /* BAUHS93.TTF */,
+			);
+			name = Resources;
+			path = "";
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -174,27 +195,6 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
-		};
-		21DA21ED892848D282C08F73 /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				756E56AD774C42479757804C /* Grenadine-MVB-Bold-Italic.otf */,
-				38EA2F3D7E09450095F9E030 /* Grenadine-MVB-Bold.otf */,
-				EA50F5045E1849008F338ABB /* Grenadine-MVB-Medium-Italic.otf */,
-				703D21F6388043279F31A4AB /* Grenadine-MVB-Medium.otf */,
-				32669DE9F0B84FED920BC574 /* Grenadine-MVB-Regular-Italic.otf */,
-				391971FCDDEB41F382D1579F /* Grenadine-MVB-Regular.otf */,
-				7D8334362C82436AAFEA6132 /* Objektiv-Mk2-Bold-Itlic.otf */,
-				EC9B2EE5BE88498BB349B2E9 /* Objektiv-Mk2-Bold.otf */,
-				E9712D12535B4E0BA9FF2DE1 /* Objektiv-Mk2-Medium-Italic.otf */,
-				3F284F0BC5BD45BFAB8FD84C /* Objektiv-Mk2-Medium.otf */,
-				05BD18CA78144987926D924E /* Objektiv-Mk2-Regular-Italic.otf */,
-				668C1E89A6894107AF01F023 /* Objektiv-Mk2-Regular.otf */,
-				C61B5F095CBA45E39F6D3AAF /* BAUHS93.TTF */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 
@@ -657,6 +657,7 @@
 					"-DFOLLY_MOBILE=1",
 					"-DFOLLY_USE_LIBCPP=1",
 				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -720,6 +721,7 @@
 					"-DFOLLY_MOBILE=1",
 					"-DFOLLY_USE_LIBCPP=1",
 				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
