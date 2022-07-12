@@ -22,7 +22,7 @@ export default function App() {
             animationEnabled: true,
             animationTypeForReplace: 'pop',
           }}
-          initialRouteName={'Home'}>
+          >
         <Stack.Screen name = "Home"
             component = {Home}
             options = {{title: 'Home'}}/>

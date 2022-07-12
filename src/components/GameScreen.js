@@ -21,11 +21,12 @@ export default function GameScreen({navigation}) {
   const [isLeafClicked, setLeafClicked] = useState(false);
   const [isCaterpillarClicked, setCaterpillarClicked] = useState(false);
   const [isTambourineClicked, setTambourineClicked] = useState(false);
-  const animatedB = new Value(0);
-  const animatedL = new Value(0);
-  const animatedCo = new Value(0);
-  const animatedT = new Value(0);
-  const animatedCa = new Value(0);
+  const [animationPlay, setAnimationPlay] = useState(false);
+  const animatedB =  useRef(new Value(0)).current;
+  const animatedL =  useRef(new Value(0)).current;
+  const animatedCo =  useRef(new Value(0)).current;
+  const animatedT =  useRef(new Value(0)).current;
+  const animatedCa = useRef(new Value(0)).current;
   
   let durationAnim = 1000;
   const onPressButterfly = () => {
@@ -72,7 +73,8 @@ export default function GameScreen({navigation}) {
       useNativeDriver: true,
     }).start(() => {
       setCaterpillarClicked(true);
-    });
+      // setAnimationPlay(false);
+  });
     
   }
   const onPressTambourine = () => {
@@ -125,14 +127,14 @@ export default function GameScreen({navigation}) {
                                 translateX: animatedB.interpolate({
                                       inputRange: [0, 50, 100],
                                       outputRange: [0, -30, 0],
-                                      extrapolate: Extrapolate.CLAMP
+                                      //  // extrapolate: Extrapolate.CLAMP
 
                                     })
                                 },{ 
                                 translateY: animatedB.interpolate({
                                       inputRange: [0, 50, 100],
                                       outputRange: [0, -30, 0],
-                                      extrapolate: Extrapolate.CLAMP
+                                      //  // extrapolate: Extrapolate.CLAMP
 
                                     })
                                 }, 
@@ -140,7 +142,7 @@ export default function GameScreen({navigation}) {
                                   rotate:  animatedB.interpolate({
                                       inputRange: [0, 20, 50, 80, 100], 
                                       outputRange: ['0deg', '15deg', '-15deg', '15deg','0deg'],
-                                      extrapolate: Extrapolate.CLAMP
+                                       // extrapolate: Extrapolate.CLAMP
 
                                     })
                                 }]
@@ -154,7 +156,7 @@ export default function GameScreen({navigation}) {
               onPress={onPressCaterpillar}
               style={styles.caterpillarContainer}
             > 
-             <Animated.View
+                <Animated.View
                   style={[
                     {
                       transform: [
@@ -162,7 +164,7 @@ export default function GameScreen({navigation}) {
                                 translateY: animatedCa.interpolate({
                                       inputRange: [0, 20, 50, 80, 100],
                                       outputRange: [0, -20, 0, -20,0],
-                                      extrapolate: Extrapolate.CLAMP
+                                       // extrapolate: Extrapolate.CLAMP
 
                                     })
                                 }, 
@@ -172,14 +174,27 @@ export default function GameScreen({navigation}) {
                 > 
                     <Image source={Caterpillar} resizeMode="contain" style={styles.caterpillar}></Image>
                 </Animated.View>
-                {/* <Image source={Animation} resizeMode="contain" style={styles.animation}></Image> */}
-
+                <Animated.View
+                    style={[
+                        {
+                          // Bind opacity to animated value
+                          position: "absolute",
+                          opacity: animatedCa.interpolate({
+                                      inputRange: [0, 10, 50, 90, 100],
+                                      outputRange: [0, 1, 1, 1, 0],
+                                       // extrapolate: Extrapolate.CLAMP
+                                    })
+                        }
+                      ]}
+                >
+                      <Image source={Animation} resizeMode="contain" style={styles.animation}></Image>
+                 </Animated.View>
             </TouchableOpacity>
             <TouchableOpacity
               onPress={onPressCocoon}
               style={styles.cocoonContainer}
             > 
-             <Animated.View
+              <Animated.View
                   style={[
                     {
                       transform: [
@@ -189,7 +204,7 @@ export default function GameScreen({navigation}) {
                           rotateZ:  animatedCo.interpolate({
                               inputRange: [0, 20, 50, 80, 100], 
                               outputRange: ['0deg', '20deg', '-20deg','10deg', '0deg'],
-                              extrapolate: Extrapolate.CLAMP
+                               // extrapolate: Extrapolate.CLAMP
 
                             })
                         }, 
@@ -200,13 +215,28 @@ export default function GameScreen({navigation}) {
                   ]} 
                 > 
                     <Image source={Cocoon} resizeMode="contain" style={styles.cocoon}></Image>
+              </Animated.View>
+              <Animated.View
+                    style={[
+                        {
+                          // Bind opacity to animated value
+                          position: "absolute",
+                          opacity: animatedCo.interpolate({
+                                    inputRange: [0, 10, 50, 90, 100],
+                                    outputRange: [0, 1, 1, 1, 0],
+                                      // extrapolate: Extrapolate.CLAMP
+                                  })
+                        }
+                      ]}
+                >
+                      <Image source={Animation} resizeMode="contain" style={styles.animationCocoon}></Image>
                 </Animated.View>
             </TouchableOpacity>
             <TouchableOpacity
               onPress={onPressLeaf}
               style={styles.leafContainer}
             > 
-             <Animated.View
+                <Animated.View
                   style={[
                     {
                       transform: [
@@ -214,7 +244,7 @@ export default function GameScreen({navigation}) {
                                 translateY: animatedL.interpolate({
                                       inputRange: [0, 20, 50, 80, 100],
                                       outputRange: [0, -20, -30, -20, 0],
-                                      extrapolate: Extrapolate.CLAMP
+                                       // extrapolate: Extrapolate.CLAMP
 
                                     })
                                 }, 
@@ -222,7 +252,7 @@ export default function GameScreen({navigation}) {
                                   rotate:  animatedL.interpolate({
                                       inputRange: [0, 20, 40, 80, 100], 
                                       outputRange: ['0deg', '15deg', '-15deg', '15deg','0deg'],
-                                      extrapolate: Extrapolate.CLAMP
+                                       // extrapolate: Extrapolate.CLAMP
 
                                     })
                                 }, 
@@ -231,6 +261,21 @@ export default function GameScreen({navigation}) {
                   ]} 
                 > 
                    <Image source={Leaf} resizeMode="contain" style={styles.leaf}></Image>
+                </Animated.View>
+                <Animated.View
+                    style={[
+                        {
+                          // Bind opacity to animated value
+                          position: "absolute",
+                          opacity: animatedL.interpolate({
+                                    inputRange: [0, 10, 50, 80, 100],
+                                    outputRange: [0, 1, 1, 1, 0],
+                                      // extrapolate: Extrapolate.CLAMP
+                                  })
+                        }
+                      ]}
+                >
+                      <Image source={Animation} resizeMode="contain" style={styles.animation}></Image>
                 </Animated.View>
             </TouchableOpacity>
             <TouchableOpacity
@@ -245,7 +290,7 @@ export default function GameScreen({navigation}) {
                                 scale: animatedT.interpolate({
                                       inputRange: [0, 30, 50, 70, 100],
                                       outputRange: [1, 1.3, 1, 1.3,1],
-                                      extrapolate: Extrapolate.CLAMP
+                                       // extrapolate: Extrapolate.CLAMP
 
                                     })
                                 }, 
@@ -254,6 +299,21 @@ export default function GameScreen({navigation}) {
                   ]} 
                 > 
                     <Image source={Tambourine} resizeMode="contain" style={styles.tambourine}></Image>
+                </Animated.View>
+                <Animated.View
+                    style={[
+                        {
+                          // Bind opacity to animated value
+                          position: "absolute",
+                          opacity: animatedT.interpolate({
+                                    inputRange: [0, 10, 50, 90, 100],
+                                    outputRange: [0, 1, 1, 1, 0],
+                                      // extrapolate: Extrapolate.CLAMP
+                                  })
+                        }
+                      ]}
+                >
+                      <Image source={Animation} resizeMode="contain" style={styles.animationCocoon}></Image>
                 </Animated.View>
             </TouchableOpacity>
             <Animated.View
@@ -297,6 +357,15 @@ const styles = StyleSheet.create({
   },
   animation: {
     position: "absolute",
+    top: -120,
+    left: -25,
+    width: width / 1364 * 150,
+  },
+  animationCocoon: {
+    position: "absolute",
+    top: -100,
+    left: -45,
+    width: width / 1364 * 200,
   },
   imageBack: {
     width: "100%",

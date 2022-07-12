@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Dimensions } from 'react-native';
 import { Button, ImageBackground, Modal, Image, StyleSheet, TextInput, TouchableOpacity,TouchableWithoutFeedback, Text, View, ScrollView } from 'react-native';
 import Video, {TextTrackType} from "react-native-video";
+import { useIsFocused } from '@react-navigation/native';
 const BackGroup = require("../assets/Group107.png");
 const Pick_Left = require("../assets/Pick_Left.png");
 const SearchIcon = require("../assets/SearchIcon.png");
@@ -44,6 +45,7 @@ const AppVideo = require("../assets/video/AppVideo.mp4");
 
 const {width, height} = Dimensions.get('screen');
 export default function SongsList({navigation}) {
+  const isFocused = useIsFocused();
   const [searchText, setSearchText] = React.useState("")
   const [payModalVisible, setPayModalVisible] = React.useState(false);
   const [selectedVideo,  setSelectedVideo] = React.useState(null);
@@ -197,6 +199,12 @@ export default function SongsList({navigation}) {
   const onPressBuyNow = () => {
     navigation.navigate('Home');
   }
+  useEffect(() => {
+      if(isFocused)
+         setSelectedVideo(null);
+    return () => {
+    };
+  }, [isFocused])
   const ItemView = (item, index) => {
     return (
       <View style={styles.feature} key={index}>
@@ -307,25 +315,20 @@ export default function SongsList({navigation}) {
           </Modal>
       </ScrollView>
       {
-        selectedVideo && !isLoading && <View style={{right: 0, bottom:0,flex:1, position: "absolute", width: width, backgroundColor: "#000", height: height  }}>
+        selectedVideo && <View style={{opacity: loadState === true ?  1: 0, right: 0, bottom:0,flex:1, position: "absolute", width: width, backgroundColor: "#000", height: height  }}>
               <Video
                 source={selectedVideo}
                 style={{marginTop: 0, width: width, height: height-50 }}
                 controls={true}
                 useNativeControls
                 onEnd={()=> { 
-                setSelectedVideo(null);
-                navigation.navigate('GameScreen');
+                  navigation.navigate('GameScreen');
                 }
                 }
                 onLoadStart={() => {
-                    console.log('...I am loading...')
-                    setLoadState({ isLoading: true });
                 }}
-                onLoadedData={() => {
-                    console.log('Data is loaded!')
-                    setLoadState({ isLoading: false });
-
+                onReadyForDisplay={() => {
+                    setLoadState(true);
                 }}
                 onError={() => setSelectedVideo(null)} 
               />
